@@ -1,0 +1,23 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of lCustomersList">
+      <td>
+        {{ customer.ID }}
+      </td>
+      <td>
+        {{ customer.name }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<!-- I want to get the customer id 1 data -->
+<button class="btn btn-primary" (click)="GetCustomersByID()">Get</button>

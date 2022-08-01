@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of localCustomersList">
+        <td>
+          {{ customer.ID }}
+        </td>
+        <td>
+          {{ customer.name }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
