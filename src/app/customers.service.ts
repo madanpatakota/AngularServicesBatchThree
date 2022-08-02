@@ -1,49 +1,32 @@
+import { Injectable } from "@angular/core";
+import { Customer } from "./customers.model";
 
+@Injectable({providedIn:'root'})
 export class CustomerService{
 
-     getCustomers(){
-
-       let Customers = [
-            {
-              ID: 1,
-              name: 'Customer-A',
-            },
-            {
-              ID: 2,
-              name: 'Customer-B',
-            },
-          ];
-
-        return Customers;
+  //name:string = "Madan";    //recommanded
 
 
-     }
-
-
-
-     getCustomersByID(ID:number){
-
-
-        let Customers = [
-            {
-              ID: 1,
-              name: 'Customer-A',
-            },
-            {
-              ID: 2,
-              name: 'Customer-B',
-            },
-          ];
-
-
-
-        let filterCustoems  =  Customers.filter((item)=>item.ID == 1);
-        return filterCustoems;
-
-           ///Logic is here
-     }
-
-
+  CustomersList : Customer[]= [
+    {
+      CustomerID: 'ANATR',
+      ContactName: 'Ana Trujillo',
+      City: 'México D.F.',
+      Phone: '(5) 555-4729',
+    },
+    {
+      CustomerID: 'HANAR',
+      ContactName: 'Mario Pontes',
+      City: 'Rio de Janeiro',
+      Phone: '(21) 555-0091',
+    },
+    {
+      CustomerID: 'VINET',
+      ContactName: 'Paul Henriot',
+      City: 'Reims',
+      Phone: '26.47.15.10',
+    },
+  ];
 
 
 }

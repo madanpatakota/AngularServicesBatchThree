@@ -1,19 +1,59 @@
-<table class="table">
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let customer of localCustomersList">
-        <td>
-          {{ customer.ID }}
-        </td>
-        <td>
-          {{ customer.name }}
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  
+
+<div style="background-color:aliceblue">
+<table class="table table-hover table-stripped">
+  <thead>
+    <tr>
+      <th>CustomerID</th>
+      <th>ContactName</th>
+      <th>City</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let customer of localCustomersList">
+      <td>
+        {{ customer.CustomerID }}
+      </td>
+      <td>
+        {{ customer.ContactName }}
+      </td>
+      <td>
+        {{ customer.City }}
+      </td>
+      <td>
+        {{ customer.Phone }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+
+<table class="table table-hover table-stripped">
+  <thead>
+    <tr>
+      <th>OrderID</th>
+      <th>CustomerID</th>
+      <th>Date</th>
+      <th>ShipName</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of localOrdersList">
+      <td>
+        {{ order.CustomerID }}
+      </td>
+      <td>
+        {{ order.OrderID }}
+      </td>
+      <td>
+        {{ order.OrderDate }}
+      </td>
+      <td>
+        {{ order.ShipName }}
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
