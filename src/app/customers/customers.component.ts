@@ -7,7 +7,7 @@ import { CustomerService } from '../customers.service';
   selector: 'app-customers',
   templateUrl: './customers.component.html',
   styleUrls: ['./customers.component.css'],
-  providers:[CustomerService]
+  providers:[]
 })
 export class CustomersComponent implements OnInit {
   constructor(private customProvider:CustomerService) {}

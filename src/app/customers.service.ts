@@ -1,7 +1,10 @@
 import { Injectable } from "@angular/core";
 import { Customer } from "./customers.model";
 
-@Injectable({providedIn:'root'})
+
+
+
+@Injectable()
 export class CustomerService{
 
   //name:string = "Madan";    //recommanded

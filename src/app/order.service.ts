@@ -5,7 +5,7 @@ import { CustomerService } from './customers.service';
 import { Injectable } from '@angular/core';
 // use the customerservie
 
-@Injectable({providedIn:'root'})
+@Injectable()
 export class OrderService {
 
     //i am injecting customerService......
@@ -42,6 +42,7 @@ export class OrderService {
    let ordersList =  this.OrdersList;
    let customersList = this.CustomerService.CustomersList;
 
+   //Tuple , spread , rest 
    return [ordersList , customersList];
 
   }
